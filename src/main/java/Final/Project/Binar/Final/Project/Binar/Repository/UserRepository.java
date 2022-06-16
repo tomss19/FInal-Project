@@ -12,6 +12,6 @@ import java.util.List;
 @Transactional
 public interface UserRepository extends JpaRepository<User, Long> {
   List<User> findAll ();
-  User findByIdUserId (long userId);
-  List<User> findById(long userId);
+  User findByUserId (long userId);
+//  List<User> findById(long userId);
 }
